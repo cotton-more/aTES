@@ -13,9 +13,9 @@
 ##  CUD-события
 
  - TaskWasCompleted
-  - task GUID
+   - task GUID
  - TaskWasAssigned
-  - task GUID
+   - task GUID
 
 
 ## Список сервисов
