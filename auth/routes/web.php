@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,5 +27,7 @@ Route::get('/clients', function () {
         'clients' => auth()->user()->clients,
     ]);
 })->middleware(['auth'])->name('clients');
+
+Route::resource('users', UserController::class)->only('index', 'edit', 'update')->middleware('auth');
 
 require __DIR__.'/auth.php';
