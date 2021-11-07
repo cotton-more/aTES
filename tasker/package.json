@@ -1,6 +1,8 @@
 {
     "private": true,
     "scripts": {
+        "css-build": "node-sass --omit-source-map-url resources/css/app.scss public/css/app.css",
+        "css-watch": "npm run css-build -- --watch",
         "dev": "npm run development",
         "development": "mix",
         "watch": "mix watch",
@@ -11,8 +13,13 @@
     },
     "devDependencies": {
         "axios": "^0.21",
+        "bulma": "^0.9.3",
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
-        "postcss": "^8.1.14"
+        "node-sass": "^6.0.1",
+        "postcss": "^8.1.14",
+        "resolve-url-loader": "^4.0.0",
+        "sass": "^1.43.4",
+        "sass-loader": "^12.3.0"
     }
 }

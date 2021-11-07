@@ -2,11 +2,13 @@
     <section class="hero">
         <div class="hero-body">
             <p class="title">
-                Hero title
+                Welcome
             </p>
+            @guest()
             <p class="subtitle">
-                Hero subtitle
+                <a href="{{ route('login') }}" class="button is-primary is-large">Login</a>
             </p>
+            @endguest
         </div>
     </section>
 </x-app-layout>
